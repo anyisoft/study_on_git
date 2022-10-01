@@ -5,6 +5,7 @@
 
 test() ->
 	application:ensure_all_started(lager),
+	%%aaa:bbb("error msg"),
 	lager:error("error msg"),
 	lager:warning("warning msg"),
 	lager:debug("debug msg"),
