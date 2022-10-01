@@ -1,0 +1,42 @@
+{
+	[
+		"src/*", 
+		"data/*", 
+		"application/memcache/*", 
+		"application/memcache/db_convert/*",
+		"application/game_log/*",
+		"application/*/src/*",
+		"application/*/src/*/*"
+	],
+	[
+		debug_info,
+		export_all,
+		warnings_as_errors,
+
+		{i, "include"},
+		{i, "deps/emysql/include"},
+		{i, "deps/luerl/include"}, 
+		{i, "deps/percent_encoding/include"}, 
+		{i, "deps/protobuffs/include"}, 
+		{i, "deps/rfc4627_jsonrpc/include"}, 
+		{i, "deps/rsrc_pool/include"}, 
+		{i, "deps/rsrc_pool/include"}, 
+		{i, "deps/sgte/include"}, 
+		{i, "deps/recon/include"}, 
+
+		{i, "application/include"}, 
+		{i, "application/game/include"}, 
+		{i, "application/gateway/include"}, 
+		{i, "application/http/include"}, 
+		{i, "application/logger/include"}, 
+		{i, "application/login/include"}, 
+		{i, "application/network_proto/include"}, 
+		{i, "application/robot/include"}, 
+		{i, "application/server_log_receive/include"}, 
+		{i, "application/syslog_pool/include"}, 
+		{i, "application/util/include"}, 
+		debug_info,
+
+		{outdir, "ebin"} 
+	]
+}.
