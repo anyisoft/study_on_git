@@ -13,7 +13,7 @@ public class UseGeneric_2 {
     }
 }
 
-class Person {
+class Person implements Comparable<Person> {
 	String name;
 	int    score;
 	
@@ -24,5 +24,13 @@ class Person {
 	
 	public String toString() {
 		return this.name + "," + this.score;
+	}
+	
+	public int compareToV1( Person other ) {
+		return this.name.compareTo(other.name);
+	}
+	
+	public int compareTo( Person other ) {
+		return this.score - other.score;
 	}
 }
